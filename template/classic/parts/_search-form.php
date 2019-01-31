@@ -15,7 +15,7 @@
           <div class="card-body">
             <form class="" action="index.php" method="get">
               <input type="hidden" name="search" value="search">
-              <input value="<?php echo getQuery('keywords'); ?>" @focus="searchOnFocus" @blur="searchOnBlur" type="text" id="search-input" name="keywords" class="input-transparent w-100" placeholder="Enter keyword to search..." />
+              <input value="<?php echo getQuery('keywords'); ?>" @focus="searchOnFocus" @blur="searchOnBlur" type="text" id="search-input" name="keywords" class="input-transparent w-100" placeholder="Enter keyword to search collection..." />
             </form>
           </div>
         </div>

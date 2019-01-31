@@ -12,8 +12,8 @@ html {
 }
 
 .c-header {
-  min-height: 480px;
-  background: url('../images/bg.jpg');
+  min-height: 460px;
+  background: url('../images/slide1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 90%;
@@ -30,7 +30,7 @@ html {
 }
 
 .search {
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 .search input {
@@ -154,6 +154,10 @@ html {
   min-height: 160px;
 }
 
+.member-area .c-header {
+  min-height: 40px;
+}
+
 .item p {
   font-size: 10pt;
 }
@@ -168,6 +172,7 @@ html {
 
 .availability {
   text-align: center;
+  overflow: hidden;
 }
 
 .availability .label{
@@ -178,6 +183,32 @@ html {
 .availability .value{
   font-size: 28pt;
   font-weight: 200;
+}
+
+.add-to-chart {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #606f7b;
+  color: #f8fafc;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-to-chart .label {
+  color: #f8fafc;
+}
+
+.availability:hover .add-to-chart {
+  opacity: 1;
+}
+
+.availability:hover .availability-content {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .biblioPaging {
@@ -319,6 +350,7 @@ html {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+.page-member-area .memberButton,
 .jsonResultLink,
 .xmlResultLink {
   font-weight: 400;
@@ -355,4 +387,106 @@ html {
 .xmlResultLink:disabled {
   color: #6c757d;
   pointer-events: none;
+}
+
+.biblioMarkFormAction {
+  display: none;
+}
+
+.memberInfoHead {
+  font-size: 24px;
+  font-weight: bold;
+  border-left: 4px solid #848484;
+  padding: 2px 4px 2px 16px;
+  margin-bottom: 16px;
+}
+
+.page-member-area .tagline {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 1.5rem;
+}
+
+.page-member-area .memberButton {
+  background-color: #0074e7;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.page-member-area .memberButton:hover {
+  background-color: #0085ff;
+  box-shadow: 0 0 4px rgba(0,0,0,.05), 0 6px 10px rgba(0,0,0,.08);
+}
+
+.page-member-area .errorBox {
+  color: #fd423d;
+  padding: 1rem;
+  background-color: rgba(255, 67, 61, 0.22);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.page-member-area .loginInfo {
+  padding: 0.5rem 0;
+}
+
+.page-member-area .fieldLabel {
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+
+.page-member-area .form-control {
+  width: 320px;
+}
+
+.librarian {
+  display: flex;
+  margin-bottom: 1.5rem;
+  flex: 0 50%;
+}
+
+.span2 {
+  width: 12rem;
+}
+
+.span2 div:first-child {
+  padding: 2rem;
+  background: #dae1e7;
+  border-radius: 4px;
+}
+
+.span2 img {
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+              0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.span8 {
+  flex: 1;
+  padding: 0 1rem 0 1rem;
+}
+
+.span8 .row-fluid {
+  display: flex;
+}
+
+.span8 .row-fluid .key {
+  flex: 0 0 100px;
+  font-weight: bold;
+}
+
+.span8 .row-fluid .value {
+  flex: 1;
+}
+
+.span8 .librarian-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

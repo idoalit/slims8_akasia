@@ -6,6 +6,12 @@
 # @Last modified by:   user
 # @Last modified time: 2018-01-26T11:37:10+07:00
 
+//$a = get_defined_vars();
+//$a['sysconf'] = null;
+//$a['main_content'] = null;
+//echo '<pre>'; print_r($a); echo '</pre>'; die();
+//echo '<pre>'; print_r($_SESSION); echo '</pre>'; die();
+
 // ----------------------------------------------------------------------------
 // load function library for classic template
 // ----------------------------------------------------------------------------
@@ -30,7 +36,7 @@ if (isset($_GET['p']) || isset($_GET['search'])) {
     // --------------------------------------------------------------------------
     // handle member page
     if ($_GET['p'] == 'member') {
-      # code...
+      include 'parts/_member.php';
     } else {
       include 'parts/_other.php';
     }

@@ -20,6 +20,12 @@ if (!defined('INDEX_AUTH')) {
 // ----------------------------------------------------------------------------
 define('CURRENT_TEMPLATE_DIR', $sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/');
 
+// ----------------------------------------------------------------------------
+// Define member login state
+// ----------------------------------------------------------------------------
+$is_login = utility::isMemberLogin();
+$member_image_name = isset($_SESSION['mid']) ? 'member_' . $_SESSION['mid'] . '.jpg' : 'person.png';
+$member_image_path = getImagePath($sysconf, $member_image_name, 'persons');
 
 // ----------------------------------------------------------------------------
 // Method for create url assets

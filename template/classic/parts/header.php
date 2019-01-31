@@ -66,6 +66,10 @@
     <link rel="stylesheet" href="<?php echo assets('plugin/font-awesome/css/fontawesome-all.min.css'); ?>">
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="<?php echo assets('css/tailwind.min.css'); ?>">
+    <!-- Vegas CSS -->
+    <link rel="stylesheet" href="<?php echo assets('plugin/vegas/vegas.min.css'); ?>">
+    <link href="<?php echo JWB; ?>toastr/toastr.min.css?<?php echo date('this') ?>" rel="stylesheet" type="text/css" />
+
     <link rel="shortcut icon" href="webicon.ico" type="image/x-icon"/>
 
     <!-- // load vue js -->
@@ -74,6 +78,9 @@
     <script src="<?php echo assets('js/jquery.min.js'); ?>"></script>
     <!-- // load bootstrap javascript -->
     <script src="<?php echo assets('js/bootstrap.min.js'); ?>"></script>
+    <!-- // load vegas javascript -->
+    <script src="<?php echo assets('plugin/vegas/vegas.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo JWB; ?>toastr/toastr.min.js"></script>
 
 </head>
 <body class="bg-grey-lightest">

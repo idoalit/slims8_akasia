@@ -53,19 +53,3 @@ var show_advanced = new Vue({
         }
     }
 });
-
-$(document).ready(() => {
-    // 65x83
-    var images = $('.fit-height');
-    $.each(images, (i, v) => {
-        var width = $(v).width(),
-            height = (width * 83) / 65;
-        // console.log(height);
-        $(v).height(height)
-    })
-});
-
-// remove &nbsp in pagging
-$('.biblioPaging .pagingList').html(function (i, h) {
-    return h.replace(/&nbsp;/g, '');
-});

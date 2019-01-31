@@ -90,15 +90,19 @@ function biblio_list_format($dbs, $biblio_detail, $n, $settings = array(), &$ret
   $output .= '<p>'.$notes.'</p>';
   $output .= '</div>'; // -- close col-8
   $output .= '<div class="col-2">';
-  $output .= '<div class="card availability">';
+  $output .= '<div class="card availability cursor-pointer">';
   $output .= '<div class="card-body pt-3 pb-2 px-1">';
-  $output .= '<div class="d-flex flex-column">';
+  $output .= '<div class="d-flex availability-content flex-column">';
   $output .= '<span class="label">availability</span>';
   $output .= '<span class="value '.$class_avail.'">'.$availability.'</span>';
   $output .= '</div>'; // -- close d-flex flex-column
+  $output .= '<div class="add-to-chart align-items-center justify-content-center flex-column" data-biblio="'.$biblio_id.'">';
+  $output .= '<span class="label">Add to basket</span>';
+  $output .= '<span class="value"><i class="fas fa-plus"></i></span>';
+  $output .= '</div>'; // -- close d-flex flex-column
   $output .= '</div>'; // -- close card-body pt-3 pb-2 px-1
   $output .= '</div>'; // -- close card availability
-  $output .= '<a class="btn btn-outline-primary btn-block mt-2 btn-sm" href="'.$detail_url.'">Detail</a>';
+  $output .= '<a class="btn btn-outline-primary btn-block mt-2 btn-sm" href="'.$detail_url.'">View Detail</a>';
   $output .= '</div>'; // -- close col-2
   $output .= '</div>'; // -- close row
   $output .= '</div>';
