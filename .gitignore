@@ -39,3 +39,4 @@ $RECYCLE.BIN/
 *.lnk
 
 /vendor/
+.idea
