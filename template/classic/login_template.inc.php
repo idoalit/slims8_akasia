@@ -5,4 +5,4 @@
  * @File name           : login_template.inc.php
  */
 
-echo $main_content;
+include "index_template.inc.php";
